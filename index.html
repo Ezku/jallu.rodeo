@@ -1,33 +1,106 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>jallu.rodeo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>jallu.rodeo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-        <style>
-        h1 {
-            background-image: url(images/D.png);
-            background-size: contain;
-            position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            max-height: 664px;
-            /* max-width: 411px; */
-            margin: 0;
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <style>
+  body, html {
+    font-size: 16px;
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-family: 'Adelle', serif;
+    font-weight: 900;
+    text-align: center;
+  }
+  h1 img {
+    max-height: 4rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF0F1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    letter-spacing: -0.04rem;
+  }
+  #main {
+    max-width: 20rem;
+    align-self: center;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem 1.618rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
+  }
+  ul li a {
+    padding: 0.618rem 1rem;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: #1D2A36;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 2px;
+    background-color: #eee;
+    position: relative;
+    top: 0;
+    transition: top 0.1s, box-shadow 0.1s;
+  }
+  a:hover, a:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.13);
+    position: relative;
+    top: -2px;
+  }
+  em {
+    font-style: normal;
+  }
+  </style>
+</head>
+<body>
+  <section id="main">
+    <header>
+      <h1>
+          <img src="images/D.png" alt="D">
+          jallu.rodeo
+      </h1>
+      <ul>
+        <li><a href="http://laulukirja.jallu.rodeo"><em>laulukirja</em>.jallu.rodeo</a></li>
+        <li><a href="http://radio.jallu.rodeo"><em>radio</em>.jallu.rodeo</a></li>
+        <li><a href="./bussi">jallu.rodeo/<em>bussi</em></a></li>
+      </ul>
+    </header>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ['Roboto Mono:500']
+        },
+        typekit: {
+          id: 'cae3ngq'
         }
-        h1 img {
-            display: none;
-        }
-        </style>
-    </head>
-    <body>
-        <h1>
-            <img src="images/D.png" alt="D">
-        </h1>
-    </body>
+      });
+  </script>
+</body>
 </html>
