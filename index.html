@@ -91,34 +91,25 @@
     text-decoration: none;
     color: #363636;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.10);
-    border: 0.0625rem solid #3A3A3A;
+    border: 0.0625rem solid transparent;
     border-radius: 3px;
-    transition-property: box-shadow;
+    transition-property: box-shadow, border-color;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
   }
   a:hover, a:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.10);
   }
-  a svg {
-    transition-property: transform;
-    transition-timing-function: ease-out;
-    transition-duration: 0.2s;
-    transform: perspective(100px) translateZ(0);
-  }
-  a:hover svg {
-    transform: perspective(100px) translateZ(10px);
-  }
-  ul li a.turquoise {
+  ul li a.turquoise:hover {
     border-color: #16a085;
   }
-  ul li a.emerald {
+  ul li a.emerald:hover {
     border-color: #27ae60;
   }
-  ul li a.river {
+  ul li a.river:hover {
     border-color: #2980b9;
   }
-  ul li a.amethyst {
+  ul li a.amethyst:hover {
     border-color: #8e44ad;
   }
   </style>
